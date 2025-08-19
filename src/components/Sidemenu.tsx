@@ -30,7 +30,7 @@ const SideMenu: React.FC = () => {
         ${expanded ? "w-64" : "w-20"}`}
     >
       <div className="p-2 flex justify-end">
-        <a
+        <a data-testid="expand-button"
           onClick={() => setExpanded(!expanded)}
           className="p-2 rounded-full hover:bg-base-300 transition-colors"
         >

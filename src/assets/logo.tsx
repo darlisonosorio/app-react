@@ -5,6 +5,7 @@ const UserFinanceLogo: React.FC<{ width?: number; height?: number }> = ({
   height = 50,
 }) => (
   <svg
+    data-testid="user-finance-logo"
     width={width}
     height={height}
     viewBox="0 0 200 50"

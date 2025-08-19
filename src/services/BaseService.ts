@@ -10,19 +10,19 @@ export default class BaseService {
     this.basePath = basePath;
   }
 
-  protected get<T>(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
+  public get<T>(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
     return this.api.get<T>(`${this.basePath}${url}`, config);
   }
 
-  protected post<T>(url: string, data: unknown, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
+  public post<T>(url: string, data: unknown, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
     return this.api.post<T>(`${this.basePath}${url}`, data, config);
   }
 
-  protected put<T>(url: string, data: unknown, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
+  public put<T>(url: string, data: unknown, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
     return this.api.put<T>(`${this.basePath}${url}`, data, config);
   }
 
-  protected delete<T>(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
+  public delete<T>(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {
     return this.api.delete<T>(`${this.basePath}${url}`, config);
   }
 

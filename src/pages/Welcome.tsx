@@ -17,12 +17,12 @@ const WelcomePage: React.FC = () => {
     <main className="welcome-page flex items-center justify-center bg-base-200 p-4">
       <article className="card w-full max-w-md bg-base-100 shadow-xl border border-gray-200">
         <div className="welcome card-body text-center">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-4">
+          <h1 data-testid="welcome-title" className="text-2xl sm:text-3xl font-bold mb-4">
             Bem-vindo{user ? `, ${user.full_name.split(' ')[0]}` : "!"}
           </h1>
           {user && (
             <p className="text-gray-600 mb-6">
-              Seu e-mail registrado é <span className="font-semibold">{user.email}</span>
+              Seu e-mail registrado é <span data-testid="welcome-email" className="font-semibold">{user.email}</span>
             </p>
           )}
         </div>

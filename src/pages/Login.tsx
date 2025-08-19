@@ -75,6 +75,7 @@ const LoginPage = (): React.ReactNode => {
                 />
 
                 <span
+                  data-testid="toggle-password"
                   className="absolute inset-y-0 right-0 flex items-center pr-3 z-10 cursor-pointer"
                   onClick={() => setShowPassword(!showPassword)}
                 >
@@ -92,6 +93,7 @@ const LoginPage = (): React.ReactNode => {
 
             <div className="form-control mt-4">
               <button
+                data-testid="login-submit"
                 disabled={isSubmitting}
                 type="submit" 
                 className="btn btn-primary w-full">
