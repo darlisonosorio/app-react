@@ -44,3 +44,8 @@ $ pnpm run serve
 $ pnpm run test
 ```
 
+## login credentials
+
+- username: admin
+- password: admin
+
